@@ -1,0 +1,14 @@
+{
+    "navbar": {
+        "home": "Home",
+        "academic": "Academic",
+        "teachers": "Teachers",
+        "gallery": "Gallery",
+        "contact": "Contact",
+        "login": "Login",
+        "schoolName": "Balshid Hazi Akub Ali High School"
+    },
+    "language": {
+        "switchBtn": "Language"
+    }
+}

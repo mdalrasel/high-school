@@ -1,0 +1,14 @@
+{
+    "navbar": {
+        "home": "হোম",
+        "academic": "একাডেমিক",
+        "teachers": "শিক্ষকগণ",
+        "gallery": "গ্যালারি",
+        "contact": "যোগাযোগ",
+        "login": "লগইন",
+        "schoolName": "বলশীদ হাজী আকুব আলী উচ্চ বিদ্যালয়"
+    },
+    "language": {
+        "switchBtn": "ভাষা"
+    }
+}
