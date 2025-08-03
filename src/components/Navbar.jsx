@@ -1,6 +1,7 @@
 import { Link, NavLink } from 'react-router';
-import ThemeDropdown from '../utils/ThemeDropdown';
 import NoticeMarquee from './NoticeMarquee';
+import { MdMenu } from 'react-icons/md';
+import ThemeToggle from '../utils/ThemeToggle';
 
 const Navbar = () => {
     const navLink = <>
@@ -12,12 +13,12 @@ const Navbar = () => {
     </>;
 
     return (
-        <div className="w-full sticky top-0 z-40 bg-base-100 shadow-md px-4 sm:px-8">
-            <div className="navbar mx-auto max-w-7xl">
+        <div className="w-full sticky bg-blue-100 top-0 z-40 shadow-md px-4 sm:px-8">
+            <div className="navbar mx-auto ">
                 <div className="navbar-start">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                            {/* hamburger */}
+                        <div tabIndex={0} role="button" className="cursor-pointer lg:hidden">
+                           <MdMenu size={30}/>
                         </div>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             {navLink}
@@ -36,7 +37,7 @@ const Navbar = () => {
                 </div>
                
                 <div className="navbar-end flex items-center gap-2">
-                    <ThemeDropdown />
+                    <ThemeToggle />
                     <Link to="/login" className="btn btn-primary btn-sm sm:btn-md">লগইন</Link>
                 </div>
             </div>
