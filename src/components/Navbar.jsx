@@ -6,10 +6,12 @@ import ThemeToggle from '../utils/ThemeToggle';
 const Navbar = () => {
     const navLink = <>
         <li><NavLink to="/">হোম</NavLink></li>
-        <li><NavLink to="/academic">একাডেমিক</NavLink></li>
-        <li><NavLink to="/teachers">শিক্ষকবৃন্দ</NavLink></li>
-        <li><NavLink to="/gallery">গ্যালারি</NavLink></li>
-        <li><NavLink to="/contact">যোগাযোগ</NavLink></li>
+        <li><NavLink to="academic">একাডেমিক</NavLink></li>
+        <li><NavLink to="teacher">শিক্ষকবৃন্দ</NavLink></li>
+        <li><NavLink to="notice">নোটিশ</NavLink></li>
+        <li><NavLink to="result-board">ফলাফল</NavLink></li>
+        <li><NavLink to="gallery">গ্যালারি</NavLink></li>
+        <li><NavLink to="contact">যোগাযোগ</NavLink></li>
     </>;
 
     return (
@@ -25,8 +27,8 @@ const Navbar = () => {
                             <li><NavLink to="/about">আমাদের সম্পর্কে</NavLink></li>
                         </ul>
                     </div>
-                    <Link to="/" className="lg:hidden">
-                        <img className='w-12' src="/public/Profile.png" alt="স্কুল লোগো" />
+                    <Link to="/" className="">
+                        <img className='w-10 rounded-3xl' src="/public/Profile.png" alt="স্কুল লোগো" />
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
